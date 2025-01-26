@@ -80,5 +80,64 @@ console.log(multiplicandoXPorX(5))
 */
 
 //Desafio 3
+/*
+//1
 
+function imc(altura, peso){
+    return peso / (altura * altura)
+}
 
+console.log(imc(1.73, 100))
+
+//2
+function fatorial(numero){
+    let resultado = 1;
+    while(numero > 1){
+        resultado *= numero;
+        numero --
+    } 
+    return resultado
+ 
+}
+
+console.log(fatorial(5))
+
+//3
+function conversao(valorEmDolar){
+    return valorEmDolar * 4.8
+}
+
+console.log(conversao(100))
+
+//4
+function areaPerimetroRetangulo(altura, largura){
+    let area = largura * altura;
+    let perimetro = 2 * (largura + altura);
+    console.log(area, perimetro);
+    
+}
+
+areaPerimetroRetangulo(5, 5);
+
+//5
+function areaPerimetroCirculo(raio){
+    let area = (3.14 * raio) ** 2;
+    let perimetro = 2 * 3.14 * raio;
+    console.log(area, perimetro);
+}
+
+areaPerimetroCirculo(2)
+
+//6
+function tabuada(numero){
+    let multiplicador = 0
+    while(multiplicador <= 10){
+        console.log(`${numero} x ${multiplicador} = ${numero * multiplicador}`);
+        multiplicador ++;
+    }
+}
+
+tabuada(5);
+*/
+
+//Desafio 4 

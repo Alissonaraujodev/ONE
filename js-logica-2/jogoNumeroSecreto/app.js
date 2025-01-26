@@ -6,9 +6,12 @@ function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
+function exibirMensagemInicial(){
+    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10:');
+}
 
-exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10:');
+exibirMensagemInicial();
 
 function verificarChute(){
     let chute = document.querySelector('input').value;
@@ -39,5 +42,9 @@ function limparCampo() {
 }
 
 function reiniciarJogo(){
-    
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas =1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
 }
