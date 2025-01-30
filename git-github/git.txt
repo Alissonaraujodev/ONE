@@ -1,0 +1,12 @@
+git: ferramenta onde fazemos o controle de versões do código.
+
+git init: Transforma um diretório existente em um repositório Git.
+git add: Adiciona arquivos ao repositório(add . - atalho). 
+git comit -m "first comit": 
+git config --global user.email:
+git config --global user.name:
+git branch - M main:
+git remote add origin (link github): **recomendado SSH**
+git push -u origin main:
+git ssh-keygen -t rd25519 -C "email" : Gera um chave SSH 
+
