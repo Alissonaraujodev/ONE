@@ -1,1 +1,7 @@
 github: plataforma onde hospedamos o código.
+
+- Adicionando colaboradores ao projeto:
+Settings(configurações) -> Collaborators(colaboradores) -> add people(adicionar pessoa) -> colocar o user name(nome de usuário) da pessoa -> Select a collaborator above -> add 'nome do usuário' to this repository -> (a pessoa deve aceitar o convite mandado por email) -> View invitation(ver convite) -> Accept invitation(aceitar convite).
+
+- Existem projetos open source(código aberto), que podem ter colaborações, as demandas (novos recursos, correções de bugs),  ficam listados em issues(problemas), você pode escolher um issue para colaborar, para isso você deve fazer um fork(cópia do repositório), assim você pode solucionar a issue, para enviar essa solução você abrirá um pull request(solicitação de pull(puxar)das alterações), seu código será avaliado e caso seja aceito fará parte do código fonte, cada projeto tem suas próprias regras de contribuição.
+

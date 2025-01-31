@@ -1,12 +1,73 @@
-git: ferramenta onde fazemos o controle de versões do código.
+- git: ferramenta onde fazemos o controle de versões do código.
 
-git init: Transforma um diretório existente em um repositório Git.
-git add: Adiciona arquivos ao repositório(add . - atalho). 
-git comit -m "first comit": 
-git config --global user.email:
-git config --global user.name:
-git branch - M main:
-git remote add origin (link github): **recomendado SSH**
-git push -u origin main:
-git ssh-keygen -t rd25519 -C "email" : Gera um chave SSH 
+- git init: Transforma um diretório existente em um repositório Git.
+
+- git add: Adiciona arquivos ao repositório(add . - atalho). 
+
+- git commit -m "first comit": 
+git commit → Cria um commit com todas as alterações adicionadas com 
+git add. -m "first commit" → Define uma mensagem descritiva para o commit (neste caso, "first commit"). 
+
+- git config --global user.email: 
+git config → Comando usado para definir configurações no Git.
+--global → Aplica a configuração para todos os repositórios no computador do usuário.
+user.email → Define o e-mail do usuário que será associado aos commits.
+"seu-email@example.com" → O e-mail que será vinculado aos commits.
+
+- git config --global user.name:
+git config → Comando para definir configurações no Git.
+--global → Aplica a configuração para todos os repositórios no computador do usuário.
+user.name → Define o nome do usuário que será associado aos commits.
+"Seu Nome" → O nome que será vinculado aos commits.
+
+- git branch - M main:
+git branch → Comando para gerenciar branches no Git.
+-M → O -M (maiúsculo) força a renomeação do branch, mesmo que o nome já exista.
+main → O novo nome do branch.
+
+- git remote add origin (link github): **recomendado SSH**
+git remote → Gerencia repositórios remotos.
+add → Adiciona um novo repositório remoto.
+origin → Nome padrão usado para o repositório remoto principal.
+<URL_DO_REPOSITORIO> → URL do repositório remoto (exemplo: https://github.com/seu-usuario/seu-repositorio.git).
+
+- git push -u origin main:
+git push → Envia os commits do repositório local para o remoto.
+-u (ou --set-upstream) → Define a branch remota como padrão para futuras sincronizações. Isso significa que, depois desse comando, você pode simplesmente usar git push sem precisar especificar origin main toda vez.
+origin → Nome do repositório remoto ao qual estamos enviando o código (configurado com git remote add origin).
+main → Nome da branch que estamos enviando para o repositório remoto.
+
+- git ssh-keygen -t rd25519 -C "email": Gera uma chave SSH 
+
+- git clone URL do repositório: 
+git clone → Copia um repositório Git remoto para o seu computador.
+<URL_DO_REPOSITORIO> → A URL do repositório remoto no GitHub, GitLab, Bitbucket, etc.
+
+- git status:  Mostra informações sobre o estado da branch atual e dos arquivos no repositório.
+
+- git log: Mostra a lista de commits no repositório, em ordem cronológica inversa (do mais recente para o mais antigo).
+
+-git pull: 
+Baixa as alterações do repositório remoto e as mescla automaticamente com o código local.
+origin → Nome do repositório remoto.
+main → Nome da branch que será atualizada.
+
+Sinalizações em arquivos no VSCode
+- M modified(modificado) - arquivo já existente no git que recebeu uma modificação.
+- U untracked(não rastreado) - arquivo que ainda não existia e não teve seu registro(commit) feito.
+
+Mensagens de commit
+- Mensagens curtas;
+- Uso de verbo no infinitivo: "adicionar", "corrigir", "atualizar" seguidos dos detalhes;
+- Evite detalhes técnicos(esses detalhes podem estar na documentação ou em comentários no código);
+- Commit é uma forma de documentação do hiatórico das mudanças que ocorreram, por isso essas mensagens devem ser claras, objetivas e descritivas;
+- O commit deve ser feito ao final de uma tarefa ou resolução de um bug, para tornar o entendimento e rastreio fáceis;
+- Cada commit é uma ramificação completa do código do código até o momento em que o commit foi criado, cada commit tem um id único que tem referência aos commits anteriores, com isso é registrado um histórico completo de todos os commits, com isso é possivel voltar a um estado anterior do código.
+- Para adicionar mais de um autor em apenas um commit usar, Co-authored-by: apos pular duas linhas depois do commit, exemplo:
+    $ git commit -m "Adicionar nova funcionalidade
+    >
+    >
+    Co-authored-by: NOME <email>
+    Co-authored-by: OUTRO-NOME <email>
+
 
