@@ -1,0 +1,55 @@
+IA: Inteligência Artificial
+
+- prompt: instrução ou uma entrada fornecida para orientar a criação do conteúdo. Escrever bons prompts geram respostas melhores, por isso devemos fazer prompts mais detalhados, com informações.
+
+- prompt:
+👋 Olá, sou @Alissonaraujodev
+👀 Estou interessado em...
+🌱 Atualmente estou aprendendo...
+💞️ Estou procurando colaborar em ...
+📫 Como entrar em contato comigo...
+😄 Pronomes: ...
+⚡ Curiosidade: ...  baseado nessas frases faça uma apresentação para o read-me do github, usando palavras simples.
+
+- retorno:
+Claro! Aqui está uma sugestão de apresentação para o seu README no GitHub:
+
+👋 Olá, eu sou Alisson Araújo
+💻 Desenvolvedor entusiasta apaixonado por tecnologia e inovação!
+
+👀 Interesses: Estou sempre explorando novas ideias e tecnologias, com foco em desenvolvimento de software, ferramentas modernas e boas práticas de código.
+
+🌱 Aprendizado: Atualmente, estou me aprofundando em [tecnologias ou linguagens específicas que você está aprendendo].
+
+💞️ Colaborações: Adoro trabalhar em projetos colaborativos! Se você tem uma ideia interessante ou precisa de ajuda com algo, vamos conversar e construir algo incrível juntos!
+
+📫 Contato: Você pode me encontrar em [seu e-mail ou rede social].
+
+😄 Pronomes: [Seus pronomes, por exemplo, ele/dele].
+
+⚡ Curiosidade: Sou [compartilhe algo divertido ou único sobre você, como um hobby ou uma habilidade especial].
+
+- novo prompt para efetuar mudanças:
+atualize a parte de aprendizado: JavaScript e TypeScript (front-end e back-end) atualize os pronomes para ele e dele, curiosidades coloque que gosto de ler.
+
+- novo retorno:
+👋 Olá, eu sou Alisson Araújo
+💻 Desenvolvedor entusiasta apaixonado por tecnologia e inovação!
+
+👀 Interesses: Estou sempre explorando novas ideias e tecnologias, com foco em desenvolvimento de software, ferramentas modernas e boas práticas de código.
+
+🌱 Aprendizado: Atualmente, estou me aprofundando em JavaScript e TypeScript, tanto no front-end quanto no back-end.
+
+💞️ Colaborações: Adoro trabalhar em projetos colaborativos! Se você tem uma ideia interessante ou precisa de ajuda com algo, vamos conversar e construir algo incrível juntos!
+
+📫 Contato: Você pode me encontrar em [seu e-mail ou rede social].
+
+😄 Pronomes: ele/dele.
+
+⚡ Curiosidade: Gosto de ler, especialmente sobre [adicione temas ou gêneros de leitura favoritos, se quiser].
+
+- Tokens: Tokens podem ser uma palavra individual, um caractere, ou até mesmo uma parte de uma palavra. Por exemplo, na frase "Hello world !", temos três tokens: "Hello", "world", "!". A tokenização pode ser diferente de acordo com a linguagem do prompt. 
+
+- Prompts de demonstração: As demonstrações podem mostrar ao modelo o que deseja que ele faça. Essa abordagem às vezes é chamada de aprendizado de poucos disparos (Few-Shot learning), pois o modelo aprende com alguns exemplos fornecidos no prompt.
+
+- Prompts de conclusão: Os prompts de estilo de conclusão aproveitam como os modelos de linguagem tentam escrever o texto que eles acham que provavelmente virá a seguir. Para orientar o modelo, basta iniciar um padrão ou frase que será completada pela saída que ele deseja ver.
