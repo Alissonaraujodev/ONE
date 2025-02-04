@@ -1,5 +1,6 @@
-- git: ferramenta onde fazemos o controle de versões do código.
+git: ferramenta onde fazemos o controle de versões do código.
 
+Comandos git.
 - git init: Transforma um diretório existente em um repositório Git.
 
 - git add: Adiciona arquivos ao repositório(add . - atalho). 
@@ -7,6 +8,12 @@
 - git commit -m "first comit": 
 git commit → Cria um commit com todas as alterações adicionadas com 
 git add. -m "first commit" → Define uma mensagem descritiva para o commit (neste caso, "first commit"). 
+
+- git commit --amend -m "nova mensagem": permite modificar o último commit, alterando sua mensagem ou adicionando novos arquivos a ele sem criar um novo commit.
+- git add arquivo_esquecido.txt -> git commit --amend -m "Nova mensagem incluindo arquivo esquecido".
+- git add arquivo.txt && git commit --amend --no-edit: Adiciona um arquivo ao último commit sem mudar a mensagem.
+- git push origin main --force: Atualiza o commit no remoto após --amend (perigoso).
+(O git commit --amend é útil para corrigir pequenos erros sem poluir o histórico do repositório!).
 
 - git config --global user.email: 
 git config → Comando usado para definir configurações no Git.
@@ -47,16 +54,31 @@ git clone → Copia um repositório Git remoto para o seu computador.
 
 - git log: Mostra a lista de commits no repositório, em ordem cronológica inversa (do mais recente para o mais antigo).
 
+- git revert: desfaz um commit específico através do seu id(ex:. 5ab45b9590877fb1a49fdbeaecf678ed52306c5b), criando um novo commit que reverte as alterações feitas no commit original, sem apagar o histórico.
+
+- git reset:  usado para desfazer alterações em commits, na área de stage ou no diretório de trabalho. Dependendo da opção usada, ele pode manter ou apagar commits. (usar o id para qual versão quer retornar)
+--soft <id commit> 
+Mantém as alterações e os commits excluídos vão para a área de stage.
+Usado quando você quer refazer um commit, mas manter as mudanças para um novo commit.
+--mixed <id commit> (Padrão)
+Mantém as alterações no código, mas remove da área de stage.
+Como se tivesse rodado git reset --soft, seguido de git restore --staged.
+--hard <id commit>
+Apaga os commits e as alterações completamente.
+Cuidado: Se ainda não tiver feito push, as mudanças serão perdidas!
+
+- git reflog: Ele mostrará um histórico recente de alterações, permitindo recuperar commits apagados com: git reset --hard <hash-do-commit-perdido>.
+
 -git pull: 
 Baixa as alterações do repositório remoto e as mescla automaticamente com o código local.
 origin → Nome do repositório remoto.
 main → Nome da branch que será atualizada.
 
-Sinalizações em arquivos no VSCode
+Sinalizações em arquivos no VSCode.
 - M modified(modificado) - arquivo já existente no git que recebeu uma modificação.
 - U untracked(não rastreado) - arquivo que ainda não existia e não teve seu registro(commit) feito.
 
-Mensagens de commit
+Mensagens de commit.
 - Mensagens curtas;
 - Uso de verbo no infinitivo: "adicionar", "corrigir", "atualizar" seguidos dos detalhes;
 - Evite detalhes técnicos(esses detalhes podem estar na documentação ou em comentários no código);
@@ -69,5 +91,16 @@ Mensagens de commit
     >
     Co-authored-by: NOME <email>
     Co-authored-by: OUTRO-NOME <email>
+
+- .gitignore: é usado para especificar quais arquivos e diretórios devem ser ignorados pelo Git, ou seja, não rastreados nem adicionados ao repositório. Isso evita que arquivos desnecessários (como credenciais, arquivos temporários e dependências) sejam incluídos no controle de versão.
+arquivo.txt	-> Ignora um arquivo específico.
+*.log -> Ignora todos os arquivos .log.
+pasta/ -> Ignora uma pasta inteira.
+!arquivo.txt -> Exceção: não ignora arquivo.txt.
+- gitignore.io: cria um gitignore especifíco de acordo com a linguagem do projeto. 
+
+-Branch (Ramificação): No Git, uma branch (ramificação) permite que você trabalhe em novas funcionalidades sem afetar o código principal. Isso facilita o desenvolvimento paralelo e a colaboração em equipe.
+
+Merge (Mesclar Branches): Depois de finalizar o trabalho em uma branch, você pode mesclá-la na branch principal (geralmente main ou develop).
 
 

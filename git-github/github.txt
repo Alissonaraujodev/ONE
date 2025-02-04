@@ -5,3 +5,9 @@ Settings(configurações) -> Collaborators(colaboradores) -> add people(adiciona
 
 - Existem projetos open source(código aberto), que podem ter colaborações, as demandas (novos recursos, correções de bugs),  ficam listados em issues(problemas), você pode escolher um issue para colaborar, para isso você deve fazer um fork(cópia do repositório), assim você pode solucionar a issue, para enviar essa solução você abrirá um pull request(solicitação de pull(puxar)das alterações), seu código será avaliado e caso seja aceito fará parte do código fonte, cada projeto tem suas próprias regras de contribuição.
 
+-Readme(leia-me): Descrição sobre o projeto, sobre o que se trata o projeto(sobre), tecnologias usadas(tecnologias-linguagens), colaboradores do projeto(time).
+-Para criar esse arquivo -> README.md (pode ser criado na IDE ou no GitHub).
+
+Gist(Essêcia): Ferramento do github para compartilhar trecho de códigos sem a necessidade de criar um novo repositório. + -> new gist -> gist description(descrição geral) -> Filename including extension(Nome do arquivo incluindo extensão)ex:"index.html", "style.css", app.js -> colocar o trecho do código no campo abaixo -> Add file(
+adicionar arquivo) -> Create gist(Criar) (*Definir se é publico ou privado).
+
