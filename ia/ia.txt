@@ -53,3 +53,44 @@ atualize a parte de aprendizado: JavaScript e TypeScript (front-end e back-end) 
 - Prompts de demonstração: As demonstrações podem mostrar ao modelo o que deseja que ele faça. Essa abordagem às vezes é chamada de aprendizado de poucos disparos (Few-Shot learning), pois o modelo aprende com alguns exemplos fornecidos no prompt.
 
 - Prompts de conclusão: Os prompts de estilo de conclusão aproveitam como os modelos de linguagem tentam escrever o texto que eles acham que provavelmente virá a seguir. Para orientar o modelo, basta iniciar um padrão ou frase que será completada pela saída que ele deseja ver.
+
+Boas praticas para escrever prompts
+- Use delimitadores: os delimitadores auxiliam na indicação de partes distintas do prompt, porque fornecem uma estrutura clara para o modelo entender o que está sendo solicitado.
+
+""" (três aspas duplas): O uso de três aspas duplas é comum em várias linguagens de programação e serve para indicar um texto que não deve ser processado ou interpretado. No ChatGPT, isso pode ser usado para separar o texto da instrução. Isso ajuda a deixar a intenção da pergunta ou tópico mais clara para o modelo, facilitando a geração de uma resposta.
+
+```(três crases): As três crases são usadas para indicar que o conteúdo entre elas é tratado como um bloco de código.
+
+ _____ (sublinhados): Os sublinhados podem ser usados para gerar um resultado no formato de formulário. Isso é interessante, caso você queira automatizar o resultado de um prompt e não deseja que o resultado seja em código, apenas em texto.
+
+ - Use acentos, sinais de pontução e caracteres especiais: Escrevendo de maneira correta de acordo com o idioma do prompt a ia irá entender melhor o que está sendo siliciado
+
+ - Use citações: Use aspas para citar trechos de texto relevantes em seu prompt, especialmente se estiver fazendo uma pergunta baseada em uma citação de um texto.
+
+-  Tenha clareza e especificidade: Ao escrever um prompt, é importante ser claro(a) e específico(a) sobre o que você deseja que a IA faça. Isso ajuda o modelo a entender exatamente o que você está pedindo e a gerar uma resposta mais precisa. Por isso, é importante evitar usar termos vagos ou ambíguos que possam confundir o modelo.
+
+- Forneça contexto: Fornecer informações adicionais ou contexto relevante para a IA pode ajudar o modelo a entender melhor a pergunta e gerar uma resposta mais precisa. Se você estiver fazendo uma pergunta sobre um tópico específico, você pode fornecer algumas informações básicas sobre esse tópico no prompt.
+
+- Evite perguntas complexas: Evite fazer perguntas complexas ou que exijam respostas detalhadas. O ChatGPT funciona melhor quando recebe perguntas simples e diretas. Por isso, tente dividir perguntas complexas em perguntas menores e mais simples.
+
+- resumos em outros idiomas: Peça para para a IA analisar o idioma do texto, depois jogue essa analise em uma "variável"  e peça o resumo com essa variável, exemplo:
+idioma: XXXXX
+resumo em idioma XXXXX:_______
+
+- Alterações de textos: As IAs podem alterar o tom de voz do texto.
+
+Versatilidade: As IAs são capazes de gerar texto em diferentes estilos e tons de voz. Ele pode transformar um texto formal em um texto mais casual, ou vice-versa. Isso permite adaptar o conteúdo para diferentes públicos ou situações, tornando-o mais envolvente e adequado ao propósito desejado.
+
+Personalização: Com as IAs , é possível personalizar o tom de voz para se adequar ao estilo de uma marca, empresa ou indivíduo específico. Isso é especialmente útil em áreas como marketing e publicidade, onde a consistência da voz da marca é crucial para construir uma identidade sólida.
+
+Adaptação a diferentes plataformas: Cada plataforma ou canal de comunicação tem suas próprias nuances e expectativas em relação ao tom de voz. As IAs podem ajudar a adaptar o conteúdo para diferentes plataformas, como redes sociais, blogs, e-mails, entre outros, para que ele se alinhe com a linguagem e o estilo apropriados.
+
+Acessibilidade: O uso das IAs para alterar o tom de voz de um texto também pode beneficiar a acessibilidade. Por exemplo, as IAs podem ajudar a adaptar o tom para melhorar a descrição textual para que as pessoas cegas possam compreender com mais detalhes o conteúdo.
+
+Convertendo formatos: A IA faz a alteração de um código para outros formatos, podem ser para outras linguagens de programação ou outros tipos de arquivos de textos.
+
+Verificação ortográfica/verificação gramatical: A IA irá corrigir os erros ortograficos e gramaticais.
+
+- Para resumir textos longos é mais eficiente separar o textos em partes e pedir o resumo desas partes em chats separados e depois unir esses resumos em um outro chat.
+
+
